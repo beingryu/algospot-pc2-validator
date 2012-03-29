@@ -1,3 +1,17 @@
-과거 스크립트 이전 중입니다.
+algospot-pc2-validator
+========================
 
-[예전 문서 링크](http://algospot.com/forum/read/537/)
+preproc.rb가 전처리를, simple.rb가 단순 비교를 수행하는 구조.
+
+전처리
+--------------
+
+옵션은 코드 참조.
+
+```ruby preproc.rb -rzf a.out,a.ans```
+
+단순 비교
+---------------
+
+```ruby simple.rb a.out a.ans result.xml```
+
