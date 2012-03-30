@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<result outcome="Yes" security="result.xml">Correct.</result>
+<result outcome="No - Wrong Answer" security="result.xml">3 line(s) differ- first few lines: #3 #4 #5 </result>

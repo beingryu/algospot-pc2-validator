@@ -18,3 +18,7 @@ java -jar Validator.jar #{input} #{output} #{answer} #{resfile} #{preprocess} #{
 
 validator 이후를 넘기지 않으면 내장 SimpleValidator를 사용.
 
+실수 비교
+---------------
+
+java -jar .... FloatValidator 1e-7
