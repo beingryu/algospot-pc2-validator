@@ -1,17 +1,20 @@
 algospot-pc2-validator
 ========================
 
-preproc.rb가 전처리를, simple.rb가 단순 비교를 수행하는 구조.
+java -jar Validator.jar #{input} #{output} #{answer} #{resfile} #{preprocess} #{validator} #{args}
 
 전처리
 --------------
 
-옵션은 코드 참조.
-
-```ruby preproc.rb -rzf a.out,a.ans```
+* l Strip left(leading) whitespaces
+* r Strip right(trailing) whitespaces
+* a Strip all whitespaces
+* z Strip last empty line
+* e Strip empty lines
+* i Ignore cases
 
 단순 비교
 ---------------
 
-```ruby simple.rb a.out a.ans result.xml```
+validator 이후를 넘기지 않으면 내장 SimpleValidator를 사용.
 
