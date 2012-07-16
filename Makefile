@@ -1,6 +1,8 @@
 SRCS := $(wildcard src/*.java)
 CLASSES := $(SRCS:src/%.java=class/%.class)
 
+.PHONY: clean
+
 Validator.jar: $(CLASSES)
 	jar cvfe Validator.jar Starter -C class .
 
