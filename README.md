@@ -1,7 +1,7 @@
 algospot-pc2-validator
 ========================
 
-java -jar Validator.jar #{input} #{output} #{answer} #{resfile} #{preprocess} #{validator} #{args}
+java -jar Validator.jar #{input} #{output} #{answer} #{resfile} #{preprocess} [#{validator} [#{args}]]
 
 전처리
 --------------
@@ -16,7 +16,7 @@ java -jar Validator.jar #{input} #{output} #{answer} #{resfile} #{preprocess} #{
 단순 비교
 ---------------
 
-validator 이후를 넘기지 않으면 내장 SimpleValidator를 사용.
+validator를 지정하지 않으면 내장 SimpleValidator를 사용.
 
 실수 비교
 ---------------
