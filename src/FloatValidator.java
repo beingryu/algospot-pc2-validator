@@ -32,7 +32,7 @@ public class FloatValidator extends Validator
 
 			if (o == null && !out_tokens[i].equals(ans_tokens[i]))
 				return false;
-			if (o != null && Math.abs(o - a) > eps * Math.max(1, Math.abs(a)))
+			if (o != null && !(Math.abs(o - a) <= eps * Math.max(1, Math.abs(a))))
 				return false;
 		}
 		return true;
